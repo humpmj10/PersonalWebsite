@@ -1,0 +1,31 @@
+body {
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	color: black;
+	background-color: #fef1d2;
+	font-size: small;
+	line-height: 1.4em;
+}
+
+h1 { font-size: 160%; }
+
+h2 { font-size: 120%; }
+
+h3 { font-size: 100%; }
+
+p { font-size: 100%; } 
+
+ul { font-size: 100%; } 
+ 
+.mainPage { 
+	background-image:url("images/ps_neutral.png");
+	background-attachment: scroll;
+	background-position: right top; 
+}
+
+.resumeBody {
+	border: 2px;
+	border-style: double;
+	color: black;
+	background-image:url("images/textured_paper.png");
+}
+
