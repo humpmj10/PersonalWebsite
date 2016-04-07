@@ -14,6 +14,9 @@ app .config(['$routeProvider', '$locationProvider', function($routeProvider, $lo
       when('/home', {
         templateUrl: 'templates/home.html',
       }).
+      when('/projects', {
+        templateUrl: 'templates/projects.html',
+      }).
       otherwise({
         redirectTo: '/home'
       });
