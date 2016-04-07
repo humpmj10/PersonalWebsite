@@ -1,36 +1,72 @@
-	<!doctype html>
-	<html>
-		<head>
-			<title>Mike's Resume/Bio page</title>
-			<meta charset="UTF-8">
-			<meta name="Michael Humphrey's resume and biography" content="This is my first attempt at making a website. It contains a photo of myself, my resume and lastly my bio.">
-			<link rel="stylesheet" type="text/css" href="index.css">
-		</head>
 
-		<body class="mainPage">
-			
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mike's Resume/Bio page</title>
+<meta charset="UTF-8">
+<meta name="Michael Humphrey's resume and biography"
+	content="This is my first attempt at making a website. It contains a photo of myself, my resume and lastly my bio.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/index.css">
 
-			<div id="header">
-				<h1 style="margin-bottom:0;">Michael Humphrey</h1><br>
+</head>
+
+<body class="mainPage">
+
+	<div class="container-fluid">
+
+		<nav class="navbar navbar-inverse">
+	  		<div class="container-fluid">
+	    		<div class="navbar-header">
+	      				<a class="navbar-brand" href="#">Michael Humphrey</a>
+	    		</div>
+	    		<ul class="nav navbar-nav">
+	      			<li class="active"><a href="#home">Home</a></li>
+	      			<li><a href="#about">About</a></li>
+	      			<li><a href="#resume">Resume</a></li> 
+	      			<li><a href="#">Contact</a></li> 
+	    		</ul>
+	  		</div>
+		</nav>
+
+
+	  <div ng-view></div>
+
+		<nav class="navbar navbar-default navbar-fixed-bottom">	
+			<div class="container-fluid">	
+			    <div class="navbar-header">
+					<a class="navbar-brand" href="#">My Social Media</a>
+			    </div>
+
+				<div id="navbar" class="navbar">
+					<ul class="nav navbar-nav">
+						<li><a href="https://www.facebook.com/michael.humphrey.1441">
+								<img src="images/facebook.png" height="42" width="42"></a>
+						</li>
+						<li><a href="https://www.linkedin.com/in/humphreymichael">
+								<img src="images/linkedin.png" height="42" width="42"></a>
+						</li>
+					</ul>
+			    </div>
 			</div>
+		</nav>
+	</div>
 
-			<div id="content">
-				<img id="pic" src="images/grad_pic.jpg" alt="grad pic" title="My wife and I at Graduation"> <br>
-			</div>
+	<!-- Scripts added at the end of the page for speed -->
 
-			<div id="menu">
-				<ul id="links">
-					<li ><a class="link" href="resume.html">Resume</a></li>
-					<li ><a class="link" href="bio.html">Bio</a> <br></li>
-					<li ><a class="link" href="https://www.linkedin.com/in/HUMPHREYMICHAEL">Linkedin</a> <br></li>
-					<li ><a class="link" href="https://bitbucket.org/humpmj10/">Projects</a> <br></li>
-				</ul>	
-			</div>
-
-			<div id="footer">
-
-			</div>
-		
-	</body>
+	<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.7/angular-css.js"></script>
+<script src="webApp.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap-tpls.js"></script>
+</body>
 
 </html>
