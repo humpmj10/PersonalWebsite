@@ -1,10 +1,8 @@
-var app = angular.module('phonecatApp', ['ngRoute', 'door3.css', 'ui.bootstrap']);
+var app = angular.module('webApp', ['ngRoute', 'door3.css', 'ui.bootstrap']);
   
 app.constant('baseUrl', 'file:///K:/bitbucket%20projects/Personal%20Website/') ;
 
 app .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-
-    $locationProvider.html5Mode(true);
 
     $routeProvider.
       when('/about', {
@@ -20,3 +18,6 @@ app .config(['$routeProvider', '$locationProvider', function($routeProvider, $lo
         redirectTo: '/home'
       });
   }]);
+
+   app.controller('mainController', function($scope) {
+    });
