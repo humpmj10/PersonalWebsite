@@ -21,6 +21,10 @@ app .config(['$routeProvider', '$locationProvider', function($routeProvider, $lo
         templateUrl: 'templates/projects.html',
         css: "css/projects.css", 
       }).
+      when('/contact', {
+        templateUrl: 'templates/contact.html',
+        css: "css/contact.css", 
+      }).
       otherwise({
         redirectTo: '/home'
       });
