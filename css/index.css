@@ -6,3 +6,8 @@
 .navbar .navbar-collapse {
     text-align: right;
 }
+
+#footer {
+	text-align: center;
+	font-family: "europa";
+}
