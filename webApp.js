@@ -7,15 +7,19 @@ app .config(['$routeProvider', '$locationProvider', function($routeProvider, $lo
     $routeProvider.
       when('/about', {
         templateUrl: 'templates/bio.html',
+        css: "css/bio.css", 
       }).
       when('/resume', {
         templateUrl: 'templates/resume.html',
+        css: "css/resume.css", 
       }).
       when('/home', {
         templateUrl: 'templates/home.html',
+        css: "css/home.css", 
       }).
       when('/projects', {
         templateUrl: 'templates/projects.html',
+        css: "css/projects.css", 
       }).
       otherwise({
         redirectTo: '/home'
